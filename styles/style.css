@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background-color: #74d3ff;
+	font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  width: 23vw;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  border: 5px solid #192851;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 25vh auto;
+}
+
+.header {
+  background-color: #a4bac7;
+  border-bottom: 5px solid #192851;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+  padding: 15px 10px;
+}
+
+.header--screen {
+  width: 90%;
+  height: 100%;
+  min-height: 50px;
+  background-color: #cfddba;
+  border: 5px solid #192851;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.header--screen p {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.calc--btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  background-color: #d7dfdf;
+  border-radius: 0 0 10px 10px;
+  padding: 15px 10px;
+}
+
+.btns-item {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; 
+}
+
+.btns-item button {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #7997af;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 24px;
+  border: 5px solid #192851;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.btns-item button.clear-btn {
+  font-size: 20px;
+  width: 85%;
+  height: 88%;
+}
+
+.btns-item button:active,
+.btns-item button:hover {
+  background-color: #4e738c;
+}
+
+.btns-item button.first-row {
+  background-color: #4e738c;
+}
+
+.btns-item button.first-row:active,
+.btns-item button.first-row:hover {
+  background-color: #7997af;
+}
+
+.btns-item.zero-btn {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.btns-item.zero-btn button {
+  width: 90%;
+}
+
+.btns-item.equals-btn {
+  grid-column: span 1;
+}
+
+.btns-item.equals-btn button {
+  background-color: #ff8201;
+}
+
+.btns-item.equals-btn button:active,
+.btns-item.equals-btn button:hover {
+  background-color: white;
+  color: #ff8201;
+}
