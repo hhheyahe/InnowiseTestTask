@@ -143,31 +143,13 @@ const mySPA = (function () {
 	/* VIEW START --------------------------------*/
 
 	function ModuleView() {
-	// 		let myModuleContainer = null;
-
-	// 		this.init = function (container) {
-	// 				myModuleContainer = container;
-	// 				this.renderContent(); // Рендерим содержимое сразу при инициализации
-	// 		}
-
-	// 		this.renderContent = function () {
-	// 				myModuleContainer.innerHTML = MainPageComponent.render(); // Рендерим содержимое
-	// 				window.document.title = MainPageComponent.title; // Устанавливаем заголовок
-	// 		}
-
-	// 		this.updateResult = function (result) {
-	// 				document.getElementById('result').textContent = result;
-	// 		}
-	// };
 		let myModuleContainer = null;
-		let myRouter = router;
 
-		this.init = function (container, router) {
+		this.init = function (container) {
 			myModuleContainer = container;
-			myRouter = router;
 		}
 
-		this.renderContent = function (hashPageName) {
+		this.renderContent = function () {
 			let routeName = 'main';
 
 			window.document.title = router[routeName].title;
@@ -181,25 +163,6 @@ const mySPA = (function () {
 
 	/* VIEW END --------------------------------*/
 
-// 	return {
-// 		init: function ({ container }) {
-// 				// this.main(container);
-// 				const view = new ModuleView();
-// 				const controller = new ModuleController();
-// 				const model = new ModuleModel();
-// 				view.init(document.getElementById(container));
-// 				model.init(view);
-// 				controller.init(document.getElementById(container), model);
-// 		},
-// 		main: function (container) {
-// 						const root = document.getElementById(container);
-// 					}
-// }
-// }());
-
-// document.addEventListener("DOMContentLoaded", mySPA.init({
-// container: "wrapper",
-// }));
 	return {
 		init: function ({ container, router }) {
 			this.main(container);
@@ -212,10 +175,6 @@ const mySPA = (function () {
 			model.init(view);
 			controller.init(document.getElementById(container), model);
 		},
-
-		main: function (container) {
-			const root = document.getElementById(container);
-		}
 	}
 }());
 
