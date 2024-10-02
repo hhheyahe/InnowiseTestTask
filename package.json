@@ -15,5 +15,20 @@
       "npx eslint",
       "git add"
     ]
-  }
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "name": "inno-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
