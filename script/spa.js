@@ -165,8 +165,6 @@ const mySPA = (function () {
 
 	return {
 		init: function ({ container, router }) {
-			this.main(container);
-
 			const view = new ModuleView();
 			const controller = new ModuleController();
 			const model = new ModuleModel();
