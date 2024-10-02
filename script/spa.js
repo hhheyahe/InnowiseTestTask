@@ -148,7 +148,7 @@ const mySPA = (function () {
 		this.init = function (container) {
 			myModuleContainer = container;
 		}
-x
+
 		this.renderContent = function () {
 			let routeName = 'main';
 
